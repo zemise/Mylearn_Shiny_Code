@@ -1,8 +1,7 @@
 dir.create("neiss")
 
-Sys.setenv(http_proxy="http://127.0.0.1:7890/")
-Sys.getenv("http_proxy")
-
+Sys.setenv(https_proxy="http://127.0.0.1:7890/")
+Sys.getenv("https_proxy")
 
 download <- function(name) {
   url <- "https://github.com/hadley/mastering-shiny/raw/main/neiss/"
